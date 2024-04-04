@@ -12,9 +12,10 @@
   
 }
 .footerContainer {
-  margin: 50px;
+  
   display: flex;
-  justify-content: center;
+  border: 1px solid black;
+  padding: 50px;
   align-items: center;
  
 }
@@ -51,6 +52,7 @@
 }
 
 .footerCenter {
+  
   display: flex;
   flex-direction: column;
   
@@ -58,6 +60,7 @@
 
 .location {
   display: flex;
+  margin-top: 5px;
 }
 
 .footerphone {
@@ -68,8 +71,8 @@
 .footerLogo {
   display: flex;
   flex-direction: row;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   background-color: transparent;
 }
 
@@ -86,12 +89,15 @@
 }
 
 .footerHelp {
+  background-color: #78a083;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  margin-top: 20px;
-  border: 1px solid black;;
-  padding: 15px;
+ 
+  border: 1px solid black;
+  padding: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
   box-sizing: border-box;
 }
 
@@ -107,10 +113,13 @@
   height: 30px;
 }
 .helpText{
-  padding-left: 100px;
+  padding-left: 85px;
 }
 .copyRight {
-  padding-right: 100px;
+  padding-right: 85px;
 }
 
-
+.copyRight{
+  display: flex;
+  flex-direction: row;
+}
