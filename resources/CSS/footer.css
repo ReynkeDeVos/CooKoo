@@ -1,0 +1,116 @@
+* footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+  width: 100vw;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  column-gap: 10px;
+  
+}
+.footerContainer {
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.footerLeft,
+.footerCenter,
+.footerRight {
+  justify-content: center;
+  width: 100vh;
+  height:auto;
+  margin-left: 120px;
+  
+}
+
+@media (max-width: 768px) {
+  footer .footerContainer {
+    flex-direction: column;
+    align-items: stretch; 
+  }
+}
+
+
+
+.footerLeft {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.footerHead {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.footerCenter {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.location {
+  display: flex;
+}
+
+.footerphone {
+  display: flex;
+  flex-direction: row;
+}
+
+.footerLogo {
+  display: flex;
+  flex-direction: row;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+}
+
+.footerPhoneIcon, .chef, .footerPhoneIcon, .footerLocationIcon {
+  width: 20px;
+  height: 20px; 
+}
+
+.footerLeft:hover,
+.footerCenter:hover,
+.footerRight:hover {
+  font-size: 1.3em; 
+  color: rgb(38, 38, 117);
+}
+
+.footerHelp {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 20px;
+  border: 1px solid black;;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+#Subscribe {
+  size: 2px;
+}
+.footerForm {
+  margin-bottom: 10px;
+}
+.socialIcons {
+  margin-top: 30px;
+  width: 30px;
+  height: 30px;
+}
+.helpText{
+  padding-left: 100px;
+}
+.copyRight {
+  padding-right: 100px;
+}
+
+
