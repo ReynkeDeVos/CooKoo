@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./resources/CSS/footer.css" />
+
+    <title>Blueberry Cake Recipe</title>
+    <!-- adding bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- https://www.w3schools.com/icons/fontawesome_icons_intro.asp -->
+    <!-- https://cdnjs.com/libraries/font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="./resources/CSS/style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- NavBar -->
+      <nav class="navbar fixed-top navbar-expand-lg" style="background-color: #78a083">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+          <!-- Navbar brand -->
+          <a class="navbar-brand" href="#">
+            <img src="../IMG/Logo_transparent.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top" /> COOKOO</a
+          >
+          <!-- Toggle button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Collapsible wrapper -->
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <!-- Left links -->
+            <ul class="navbar-nav flex-fill">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Recipes</a>
+              </li>
+            </ul>
+            <!-- Left links -->
+            <!-- Right link -->
+            <ul class="navbar-nav me-5">
+              <li class="nav-item dropdown border rounded-pill border-opacity-25">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa-solid fa-filter"></i> Filter</a
+                >
+                <ul class="dropdown-menu ps-1" style="background-color: #c5ebaa">
+                  <li>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="vegetarianCheckbox" />
+                      <label class="form-check-label" for="vegetarianCheckbox"><i class="fa-solid fa-carrot"></i> Vegetarian</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="veganCheckbox" />
+                      <label class="form-check-label" for="veganCheckbox"><i class="fa-solid fa-seedling"></i> Vegan</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="beefCheckbox" />
+                      <label class="form-check-label" for="beefCheckbox"><i class="fa-solid fa-cow"></i> Beef</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="porkCheckbox" />
+                      <label class="form-check-label" for="porkCheckbox"><i class="fa-solid fa-bacon"></i> Pork</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="fishCheckbox" />
+                      <label class="form-check-label" for="fishCheckbox"><i class="fa-solid fa-fish"></i> Fish</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="sweetsCheckbox" />
+                      <label class="form-check-label" for="sweetsCheckbox"><i class="fa-solid fa-cookie-bite"></i> Sweets</label>
+                    </div>
+                  </li>
+                </ul>
+                <!-- Right link -->
+              </li>
+            </ul>
+          </div>
+          <!-- Collapsible wrapper -->
+        </div>
+        <!-- Container wrapper -->
+      </nav>
+      <!-- That the main content is under the navbar! -->
+      <style>
+        body {
+          padding-top: 60px;
+        }
+      </style>
+      <!-- Navbar -->
+    </header>
+
+    <!-- RECIPE -->
+    <main>
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-sm" id="image">
+            <img
+              src="../IMG/earlgreyblueberrylemoncake.webp"
+              class="rounded img-fluid p-3"
+              alt=""
+              style="border-radius: 1rem; max-height: 30rem; width: 100% !important; object-fit: cover; object-position: center"
+            />
+          </div>
+          <div class="col-sm-8 border border-success-subtle rounded-3" id="headline"><div class="p-3">Headline</div></div>
+        </div>
+        <div class="row g-5">
+          <div class="col-sm-8 border border-success-subtle rounded-3" id="instructions">
+            <div class="p-3 container-fluid" id="instructions">
+              <h2>Instructions</h2>
+              <ol>
+                <li>Preheat the oven to 350°F (175°C).</li>
+                <li>In a large mixing bowl, cream together the butter and sugar until light and fluffy.</li>
+                <li>Add the eggs one at a time, beating well after each addition. Stir in the vanilla extract.</li>
+                <li>
+                  In a separate bowl, combine the flour, baking powder, and salt. Gradually add the dry ingredients to the butter mixture, alternating with the
+                  milk.
+                </li>
+                <li>Gently fold in the blueberries.</li>
+                <li>Pour the batter into a greased 9-inch round cake pan.</li>
+                <li>Bake for 40-45 minutes, or until a toothpick inserted into the center comes out clean.</li>
+                <li>Allow the cake to cool in the pan for 10 minutes, then transfer to a wire rack to cool completely.</li>
+              </ol>
+            </div>
+          </div>
+          <div class="col-sm border border-success-subtle rounded-3" id="ingredients">
+            <div class="p-3 container-fluid" id="ingredients">
+              <h2>Ingredients</h2>
+              <ul>
+                <li>2 cups all-purpose flour</li>
+                <li>1 cup sugar</li>
+                <li>1/2 cup unsalted butter, softened</li>
+                <li>1/2 cup milk</li>
+                <li>2 eggs</li>
+                <li>1 teaspoon vanilla extract</li>
+                <li>1 teaspoon baking powder</li>
+                <li>1/2 teaspoon salt</li>
+                <li>1 1/2 cups fresh blueberries</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- adding bootstrip JavaScript-Bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
