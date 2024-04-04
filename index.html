@@ -24,123 +24,110 @@
   </head>
   <body>
     <header>
-      <!-- NavBar -->
-      <nav class="navbar fixed-top navbar-expand-lg" style="background-color: #78a083">
-        <!-- Container wrapper -->
-        <div class="container-fluid">
-          <!-- Navbar brand -->
-          <a class="navbar-brand" href="#">
-            <img src="resources/IMG/Logo_transparent.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top" /> COOKOO</a
-          >
-          <!-- Toggle button -->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+     <!-- NavBar -->
+     <nav class="navbar fixed-top navbar-expand-lg" style="background-color: #78a083">
+      <!-- Container wrapper -->
+      <div class="container-fluid">
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="#">
+          <img src="./resources/IMG/Logo_transparent.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top" /> COOKOO</a
+        >
+        <!-- Toggle button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-          <!-- Collapsible wrapper -->
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <!-- Left links -->
-            <ul class="navbar-nav flex-fill">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Recipes</a>
-              </li>
-            </ul>
-            <!-- Left links -->
-            <!-- Right link -->
-
-            <ul class="navbar-nav me-4">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-funnel-fill" viewBox="0 0 16 16">
-                    <path
-                      d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5z"
-                    /></svg
-                  >Filter</a >
-                <ul class="dropdown-menu" style="background-color: #c5ebaa">
-
-            <ul class="navbar-nav me-5">
-              <li class="nav-item dropdown border rounded-pill border-opacity-25">
-                <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <i class="fa-solid fa-filter"></i> Filter</a
-                >
-                <ul class="dropdown-menu " style="background-color: #c5ebaa">
-
-
-                  <li>
-                    <div class="form-check form-switch">
-                      <input class="form-check-input" type="checkbox" id="vegetarianCheckbox" />
-                      <label class="form-check-label" for="vegetarianCheckbox"><i class="fa-solid fa-carrot"></i> Vegetarian</label>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="form-check form-switch">
-                      <input class="form-check-input" type="checkbox" id="veganCheckbox" />
-                      <label class="form-check-label" for="veganCheckbox"><i class="fa-solid fa-seedling"></i> Vegan</label>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="form-check form-switch">
-                      <input class="form-check-input" type="checkbox" id="beefCheckbox" />
-                      <label class="form-check-label" for="beefCheckbox"><i class="fa-solid fa-cow"></i> Beef</label>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="form-check form-switch">
-                      <input class="form-check-input" type="checkbox" id="porkCheckbox" />
-                      <label class="form-check-label" for="porkCheckbox"><i class="fa-solid fa-bacon"></i> Pork</label>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="form-check form-switch">
-                      <input class="form-check-input" type="checkbox" id="fishCheckbox" />
-                      <label class="form-check-label" for="fishCheckbox"><i class="fa-solid fa-fish"></i> Fish</label>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="form-check form-switch">
-                      <input class="form-check-input" type="checkbox" id="sweetsCheckbox" />
-                      <label class="form-check-label" for="sweetsCheckbox"><i class="fa-solid fa-cookie-bite"></i> Sweets</label>
-                    </div>
-                  </li>
-                </ul>
-                <!-- Right link -->
-              </li>
-            </ul>
-          </div>
-          <!-- Collapsible wrapper -->
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <!-- Left links -->
+          <ul class="navbar-nav flex-fill">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Recipes</a>
+            </li>
+          </ul>
+          <!-- Left links -->
+          <!-- Right link -->
+          <ul class="navbar-nav me-5">
+            <li class="nav-item dropdown border rounded-pill border-opacity-25">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-filter"></i> Filter</a
+              >
+              <ul class="dropdown-menu ps-1" style="background-color: #c5ebaa">
+                <li>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="vegetarianCheckbox" />
+                    <label class="form-check-label" for="vegetarianCheckbox"><i class="fa-solid fa-carrot"></i> Vegetarian</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="veganCheckbox" />
+                    <label class="form-check-label" for="veganCheckbox"><i class="fa-solid fa-seedling"></i> Vegan</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="beefCheckbox" />
+                    <label class="form-check-label" for="beefCheckbox"><i class="fa-solid fa-cow"></i> Beef</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="porkCheckbox" />
+                    <label class="form-check-label" for="porkCheckbox"><i class="fa-solid fa-bacon"></i> Pork</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="fishCheckbox" />
+                    <label class="form-check-label" for="fishCheckbox"><i class="fa-solid fa-fish"></i> Fish</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="sweetsCheckbox" />
+                    <label class="form-check-label" for="sweetsCheckbox"><i class="fa-solid fa-cookie-bite"></i> Sweets</label>
+                  </div>
+                </li>
+              </ul>
+              <!-- Right link -->
+            </li>
+          </ul>
         </div>
-        <!-- Container wrapper -->
-      </nav>
-      <!-- That the main content is under the navbar! -->
-      <style>
-        body {
-          padding-top: 60px;
-        }
-      </style>
-      <!-- Navbar -->
+        <!-- Collapsible wrapper -->
+      </div>
+      <!-- Container wrapper -->
+    </nav>
+    <!-- That the main content is under the navbar! -->
+    <style>
+      body {
+        padding-top: 70px;
+      }
+    </style>
+    <!-- Navbar -->
     </header>
 
     <!-- Herobar -->
     <section id="herobar"></section>
-
+    
     <!-- Main Landing Page / Recipes -->
     <section id="recipes">
 
-      <div class="card-group" style="margin: 5% 7% 1% 7%">
+      <div class="card-group" style="margin: 10% 7% 1% 7%">
         <div class="card" style="border-radius: 1rem">
           <a href="..."
             ><img
@@ -165,9 +152,9 @@
                   <li>Prep Time: 5 min</li>
                   <li>Cook Time: 20 min</li>
                   <li>Servings: 2</li>
-                </ul></small
-              >
-            </p>
+                </ul></small              >
+          </p>
+          <a style="background-color: #78A083; display: block;" href="#" class="btn btn-primary">Go to recipe</a>
           </div>
         </div>
 
@@ -189,7 +176,7 @@
               "
           /></a>
           <div class="card-body">
-            <h5 class="card-title">VEGAN FALL PASTA SALAD</h5>
+            <h5 class="card-title">Vegan Fall Pasta Salad</h5>
             <p class="card-text">Now you can have pasta salad all year long!</p>
             <p class="card-text">
               <small class="text-muted">
@@ -200,11 +187,12 @@
                 </ul>
               </small>
             </p>
+            <a style="background-color: #78A083; display: block; " href="#" class="btn btn-primary">Go to recipe</a>
           </div>
         </div>
-
+        
         <div class="card" style="border-radius: 1rem">
-          <a href="..."
+          <a href="./resources/recipes/cake_blueberry.html"
             ><img
               class="card-img-top"
               src="./resources/IMG/earlgreyblueberrylemoncake.webp"
@@ -230,6 +218,7 @@
                 </ul>
               </small>
             </p>
+            <a style="background-color: #78A083; display: block;" href="./resources/recipes/cake_blueberry.html" class="btn btn-primary">Go to recipe</a>
           </div>
         </div>
       </div>
@@ -263,6 +252,7 @@
                   <li>Servings: 4</li>
                 </ul></small>
             </p>
+            <a style="background-color: #78A083; display: block; " href ="#" class="btn btn-primary">Go to recipe</a>
           </div>
         </div>
 
@@ -296,9 +286,10 @@
                 </ul>
               </small>
             </p>
+            <a style="background-color: #78A083; display: block; " href="#" class="btn btn-primary">Go to recipe</a>
           </div>
         </div>
-
+        
         <div class="card" style="border-radius: 1rem">
           <a href="..."
             ><img
@@ -326,6 +317,7 @@
                 </ul>
               </small>
             </p>
+            <a style="background-color: #78A083; display: block;" href="#" class="btn btn-primary">Go to recipe</a>
           </div>
         </div>
       </div>
@@ -350,7 +342,7 @@
           <div class="footerCenter">
               <h4 class="footerourMission"><strong>Learn Our Mission</strong></h4>
               <div class="location">
-                <img class="footerLocationIcon" src="/images/placeholder.png" alt="footerLocationIcon">
+                <img class="footerLocationIcon" src="/CooKoo\resources\IMG/placeholder.png" alt="footerLocationIcon">
                 <p class="footerAdresse">
                 Ruko cucruk, Radio luar dalem jos<br/>
                 No.12 - 13, Kalideres - Jakarta<br/>
@@ -359,7 +351,7 @@
              </div> 
          
            <div class="footerphone">
-             <img class="footerPhoneIcon" src="/images/call.png" alt=""/>
+             <img class="footerPhoneIcon" src="/CooKoo\resources\IMG/call.png" alt=""/>
              <div class=footerTelephonNummer>(+62) 21-2224 3333</div>
             </div>
           </div>
@@ -369,17 +361,16 @@
               <form method="get" name="emailForm" id="emailForm">
                 
                 <input id="subscribeInput" placeholder="Subscribe our newsletter"  type="text" />
-                <img class="chef" src="/images/chef.png" alt="Submit"></img>
+                <img class="chef" src="/CooKoo\resources\IMG/chef.png" alt="Submit"></img>
                 <button id="button">submit</button>
              </form>
               </div>
               <div >
-                <img src="/images/facebookicon.png" alt="facebook-icon" class="socialIcons"/>
-                <img src="/images/instagram.png" alt="instagram" class="socialIcons"/>
-                <img src="/images/starbucks.png" alt="starbucks" class="socialIcons"/>
-                <img src="/images/mcdonalds.png" alt="madonalds" class="socialIcons"/>
-                <img src="/images/burger.png" alt="facebook-icon" class="socialIcons"/>
-                <img src="/images/youtube.png" alt="youtube" class="socialIcons"/>
+                <img src="/CooKoo\resources\IMG/facebookicon.png" alt="facebook-icon" class="socialIcons"/>
+                <img src="/CooKoo\resources\IMG/instagram.png" alt="instagram" class="socialIcons"/>
+                <img src="/CooKoo\resources\IMG/starbucks.png" alt="starbucks" class="socialIcons"/>
+                <img src="/CooKoo\resources\IMG/mcdonalds.png" alt="madonalds" class="socialIcons"/>
+                <img src="/CooKoo\resources\IMG/youtube.png" alt="youtube" class="socialIcons"/>
                 <img src="/CooKoo\resources\IMG/Big Header (1).png" alt="facebook-icon" class="socialIcons"/>
               </div>
             </div>   
@@ -409,6 +400,5 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous">
     </script>
-
-  </body>
+</body>
 </html>
