@@ -3,8 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" href="./resources/CSS/style.css" />
     <title>Cookoo</title>
     <!-- adding bootstrap -->
     <link
@@ -13,10 +11,100 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./resources/CSS/style.css" />
   </head>
   <body>
-    <!-- NavBar -->
-    <header></header>
+    <header>
+      <!-- NavBar -->
+      <nav class="navbar fixed-top navbar-expand-lg" style="background-color: #78a083">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+          <!-- Navbar brand -->
+          <a class="navbar-brand" href="#">
+            <img src="./resources/IMG/Logo_transparent.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top" /> COOKOO</a
+          >
+          <!-- Toggle button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Collapsible wrapper -->
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <!-- Left links -->
+            <ul class="navbar-nav flex-fill">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Recipes</a>
+              </li>
+            </ul>
+            <!-- Left links -->
+            <!-- Right link -->
+            <ul class="navbar-nav me-4">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-funnel-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5z"
+                    /></svg
+                  >Filter</a
+                >
+                <ul class="dropdown-menu" style="background-color: #c5ebaa">
+                  <!-- FILEPATH: /home/kawa/repos/WBS/CooKoo/index.html -->
+
+                  <li>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="vegetarianCheckbox" />
+                      <label class="form-check-label" for="vegetarianCheckbox">Vegetarian</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="veganCheckbox" />
+                      <label class="form-check-label" for="veganCheckbox">Vegan</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="beefCheckbox" />
+                      <label class="form-check-label" for="beefCheckbox">Beef</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="porkCheckbox" />
+                      <label class="form-check-label" for="porkCheckbox">Pork</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="fishCheckbox" />
+                      <label class="form-check-label" for="fishCheckbox">Fish</label>
+                    </div>
+                  </li>
+                </ul>
+                <!-- Right link -->
+              </li>
+            </ul>
+          </div>
+          <!-- Collapsible wrapper -->
+        </div>
+        <!-- Container wrapper -->
+      </nav>
+      <!-- Navbar -->
+    </header>
 
     <!-- Herobar -->
     <section id="herobar"></section>
