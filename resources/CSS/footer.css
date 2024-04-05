@@ -19,8 +19,7 @@
 .footerCenter,
 .footerRight {
   justify-content: end;
-  /* This setting destroys the mobile view */
-  /* width: 100vh; */
+  width: 100svw;
   height: auto;
   margin-left: 70px;
   margin-right: auto;
@@ -31,6 +30,19 @@
     white-space: nowrap;
     flex-direction: column;
     align-items: stretch;
+  }
+  footer .footerLeft,
+  .footerCenter,
+  .footerRight {
+    width: 0svw;
+    margin-inline: 0px;
+  }
+  footer .copyRight {
+    padding-right: 0px;
+    display: none;
+  }
+  footer .helpText {
+    padding-left: 0px;
   }
 }
 
