@@ -93,7 +93,7 @@
 .footerCenter:hover,
 .footerRight:hover {
   white-space: nowrap;
-  font-size: 1.3em;
+  /* font-size: 1.3em; */
   color: rgb(38, 38, 117);
 }
 
