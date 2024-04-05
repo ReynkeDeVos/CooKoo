@@ -27,11 +27,14 @@
 .footerCenter,
 .footerRight {
   justify-content: center;
+
   width: 100vh;
   height:auto;
   margin-left: 70px;
-  
-  
+ 
+  /* width: 100svw; */
+  height: auto;
+  margin-left: 120px;
 }
 
 @media (max-width: 768px) {
