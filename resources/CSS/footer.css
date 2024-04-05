@@ -19,7 +19,7 @@
 .footerLeft,
 .footerCenter,
 .footerRight {
-  justify-content: center;
+  justify-content: end;
   /* width: 100svw; */
   height: auto;
   margin-left: 120px;
