@@ -2,36 +2,24 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
- 
+
   width: 100vw;
-  height:100vh;
-  margin: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
   column-gap: 10px;
-  
 }
 .footerContainer {
- 
   display: flex;
-  justify-content: start;
-  flex-wrap: nowrap;
-  align-items: center;
   border: 1px solid black;
-  padding:50px;
-  padding-left: 130px;
-  box-sizing: border-box;
-  
- 
- 
+  padding: 50px;
+  align-items: center;
 }
 .footerLeft,
 .footerCenter,
 .footerRight {
   justify-content: center;
-
-  width: 100vh;
-  height:auto;
-  margin-left: 70px;
- 
   /* width: 100svw; */
   height: auto;
   margin-left: 120px;
@@ -39,18 +27,14 @@
 
 @media (max-width: 768px) {
   footer .footerContainer {
-    white-space: nowrap;
     flex-direction: column;
-    align-items: stretch; 
+    align-items: stretch;
   }
 }
-
-
 
 .footerLeft {
   display: flex;
   flex-direction: column;
-  
 }
 
 .footerHead {
@@ -61,15 +45,8 @@
 }
 
 .footerCenter {
-  
   display: flex;
   flex-direction: column;
-  margin-left: 0px;
-  margin-right: 0px;
-  
-}
-.footerRight {
-  margin-left: 0px;
 }
 
 .location {
@@ -90,16 +67,18 @@
   background-color: transparent;
 }
 
-.footerPhoneIcon, .chef, .footerPhoneIcon, .footerLocationIcon {
+.footerPhoneIcon,
+.chef,
+.footerPhoneIcon,
+.footerLocationIcon {
   width: 20px;
-  height: 20px; 
+  height: 20px;
 }
 
 .footerLeft:hover,
 .footerCenter:hover,
 .footerRight:hover {
-  white-space: nowrap;
-  font-size: 1.3em; 
+  font-size: 1.3em;
   color: rgb(38, 38, 117);
 }
 
@@ -108,9 +87,9 @@
   display: flex;
   justify-content: space-between;
   flex-direction: row;
- 
+
   border: 1px solid black;
-  padding: 10px;
+  padding: 25px;
   padding-left: 10px;
   padding-right: 10px;
   box-sizing: border-box;
@@ -127,15 +106,14 @@
   width: 30px;
   height: 30px;
 }
-.helpText{
+.helpText {
   padding-left: 85px;
 }
 .copyRight {
   padding-right: 85px;
 }
 
-.copyRight{
+.copyRight {
   display: flex;
   flex-direction: row;
 }
-

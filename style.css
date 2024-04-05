@@ -6,8 +6,3 @@
 @import url("./resources/CSS/recipies.css");
 
 @import url(./resources/CSS/global.css);
-*body {
-  
-  width: 100vw;
-  height:100vh;
-}

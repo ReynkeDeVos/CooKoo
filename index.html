@@ -1,141 +1,11 @@
-* footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
- 
-  width: 100vw;
-  margin: auto;
-  column-gap: 10px;
-  
-}
-.footerContainer {
-  
-  display: flex;
-  align-items: center;
-  border: 1px solid black;
-  padding: 50px;
-  box-sizing: border-box;
- 
- 
-}
-.footerLeft,
-.footerCenter,
-.footerRight {
-  justify-content: center;
-  width: 100vh;
-  height:auto;
-  margin-left: 120px;
-  
-}
-
-@media (max-width: 768px) {
-  footer .footerContainer {
-    white-space: nowrap;
-    flex-direction: column;
-    align-items: stretch; 
-  }
-}
-
-
-
-.footerLeft {
-  display: flex;
-  flex-direction: column;
-
-}
-
-.footerHead {
-  display: flex;
-  flex-direction: row;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.footerCenter {
-  
-  display: flex;
-  flex-direction: column;
-  
-}
-
-.location {
-  display: flex;
-  margin-top: 5px;
-}
-
-.footerphone {
-  display: flex;
-  flex-direction: row;
-}
-
-.footerLogo {
-  display: flex;
-  flex-direction: row;
-  width: 30px;
-  height: 30px;
-  background-color: transparent;
-}
-
-.footerPhoneIcon, .chef, .footerPhoneIcon, .footerLocationIcon {
-  width: 20px;
-  height: 20px; 
-}
-
-.footerLeft:hover,
-.footerCenter:hover,
-.footerRight:hover {
-  white-space: nowrap;
-  font-size: 1.3em; 
-  color: rgb(38, 38, 117);
-}
-
-.footerHelp {
-  background-color: #78a083;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
- 
-  border: 1px solid black;
-  padding: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  box-sizing: border-box;
-}
-
-#Subscribe {
-  size: 2px;
-}
-.footerForm {
-  margin-bottom: 10px;
-}
-.socialIcons {
-  margin-top: 30px;
-  width: 30px;
-  height: 30px;
-}
-.helpText{
-  padding-left: 85px;
-}
-.copyRight {
-  padding-right: 85px;
-}
-
-.copyRight{
-  display: flex;
-  flex-direction: row;
-}
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-
-    <link rel="stylesheet" href="./resources/CSS/footer.css" />
-
     <title>Cookoo</title>
-    
+
     <!-- adding bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -143,99 +13,16 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./resources/CSS/style.css" />
-
     <!-- https://www.w3schools.com/icons/fontawesome_icons_intro.asp -->
     <!-- https://cdnjs.com/libraries/font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!-- loading the style.css -->
+    <style>
+      @import url(style.css);
+    </style>
   </head>
   <body>
     <header>
-
-     <!-- NavBar -->
-     <nav class="navbar fixed-top navbar-expand-lg" style="background-color: #78a083">
-      <!-- Container wrapper -->
-      <div class="container-fluid">
-        <!-- Navbar brand -->
-        <a class="navbar-brand" href="#">
-          <img src="./resources/IMG/Logo_transparent.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top" /> COOKOO</a
-        >
-        <!-- Toggle button -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Collapsible wrapper -->
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <!-- Left links -->
-          <ul class="navbar-nav flex-fill">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Recipes</a>
-            </li>
-          </ul>
-          <!-- Left links -->
-          <!-- Right link -->
-          <ul class="navbar-nav me-5">
-            <li class="nav-item dropdown border rounded-pill border-opacity-25">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="fa-solid fa-filter"></i> Filter</a
-              >
-              <ul class="dropdown-menu ps-1" style="background-color: #c5ebaa">
-                <li>
-                  <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="vegetarianCheckbox" />
-                    <label class="form-check-label" for="vegetarianCheckbox"><i class="fa-solid fa-carrot"></i> Vegetarian</label>
-                  </div>
-                </li>
-                <li>
-                  <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="veganCheckbox" />
-                    <label class="form-check-label" for="veganCheckbox"><i class="fa-solid fa-seedling"></i> Vegan</label>
-                  </div>
-                </li>
-                <li>
-                  <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="beefCheckbox" />
-                    <label class="form-check-label" for="beefCheckbox"><i class="fa-solid fa-cow"></i> Beef</label>
-                  </div>
-                </li>
-                <li>
-                  <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="porkCheckbox" />
-                    <label class="form-check-label" for="porkCheckbox"><i class="fa-solid fa-bacon"></i> Pork</label>
-                  </div>
-                </li>
-                <li>
-                  <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="fishCheckbox" />
-                    <label class="form-check-label" for="fishCheckbox"><i class="fa-solid fa-fish"></i> Fish</label>
-                  </div>
-                </li>
-                <li>
-                  <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="sweetsCheckbox" />
-                    <label class="form-check-label" for="sweetsCheckbox"><i class="fa-solid fa-cookie-bite"></i> Sweets</label>
-                  </div>
-                </li>
-              </ul>
-              <!-- Right link -->
-            </li>
-          </ul>
-
       <!-- NavBar -->
       <nav class="navbar fixed-top navbar-expand-lg" style="background-color: #78a083">
         <!-- Container wrapper -->
@@ -322,41 +109,31 @@
             </ul>
           </div>
           <!-- Collapsible wrapper -->
-
         </div>
-        <!-- Collapsible wrapper -->
-      </div>
-      <!-- Container wrapper -->
-    </nav>
-    <!-- That the main content is under the navbar! -->
-    <style>
-      body {
-        padding-top: 70px;
-      }
-    </style>
-    <!-- Navbar -->
+        <!-- Container wrapper -->
+      </nav>
+      <!-- That the main content is under the navbar! -->
+      <style>
+        body {
+          padding-top: 70px;
+        }
+      </style>
+      <!-- Navbar -->
     </header>
 
     <!-- Herobar -->
     <section id="herobar"></section>
-    
+
     <!-- Main Landing Page / Recipes -->
     <section id="recipes">
-
       <div class="card-group" style="margin: 10% 7% 1% 7%">
         <div class="card" style="border-radius: 1rem">
-          <a href="..."
+          <a href="./resources/recipes/shakshuka.html"
             ><img
               class="card-img-top"
               src="./resources/IMG/shakshuka.jpeg"
               alt="Card image cap"
-              style="
-                border-radius: 1rem;
-                height: 12rem;
-                width: 100% !important;
-                object-fit: cover;
-                object-position: center;
-              "
+              style="border-radius: 1rem; height: 12rem; width: 100% !important; object-fit: cover; object-position: center"
             />
           </a>
           <div class="card-body">
@@ -368,28 +145,22 @@
                   <li>Prep Time: 5 min</li>
                   <li>Cook Time: 20 min</li>
                   <li>Servings: 2</li>
-                </ul></small              >
-          </p>
-          <a style="background-color: #78A083; display: block;" href="#" class="btn btn-primary">Go to recipe</a>
+                </ul></small
+              >
+            </p>
+          </div>
+          <div class="card-footer bg-transparent" style="border: none">
+            <a style="background-color: #78a083; display: block" href="./resources/recipes/shakshuka.html" class="btn btn-primary">Go to recipe</a>
           </div>
         </div>
 
-        <div
-          class="card"
-          style="border-radius: 1rem; margin: 0rem 1rem 0rem 1rem"
-        >
-          <a href="..."
+        <div class="card" style="border-radius: 1rem; margin: 0rem 1rem 0rem 1rem">
+          <a href="./resources/recipes/veganfallpastasalad.html"
             ><img
               class="card-img-top"
               src="./resources/IMG/veganpastasalad.jpeg"
               alt="pasta-salad"
-              style="
-                border-radius: 1rem;
-                height: 12rem;
-                width: 100% !important;
-                object-fit: cover;
-                object-position: center;
-              "
+              style="border-radius: 1rem; height: 12rem; width: 100% !important; object-fit: cover; object-position: center"
           /></a>
           <div class="card-body">
             <h5 class="card-title">Vegan Fall Pasta Salad</h5>
@@ -403,23 +174,19 @@
                 </ul>
               </small>
             </p>
-            <a style="background-color: #78A083; display: block; " href="#" class="btn btn-primary">Go to recipe</a>
+          </div>
+          <div class="card-footer bg-transparent" style="border: none">
+            <a style="background-color: #78a083; display: block" href="./resources/recipes/veganfallpastasalad.html" class="btn btn-primary">Go to recipe</a>
           </div>
         </div>
-        
+
         <div class="card" style="border-radius: 1rem">
           <a href="./resources/recipes/cake_blueberry.html"
             ><img
               class="card-img-top"
               src="./resources/IMG/earlgreyblueberrylemoncake.webp"
               alt="Card image cap"
-              style="
-                border-radius: 1rem;
-                height: 12rem;
-                width: 100% !important;
-                object-fit: cover;
-                object-position: center;
-              "
+              style="border-radius: 1rem; height: 12rem; width: 100% !important; object-fit: cover; object-position: center"
           /></a>
 
           <div class="card-body">
@@ -434,7 +201,9 @@
                 </ul>
               </small>
             </p>
-            <a style="background-color: #78A083; display: block;" href="./resources/recipes/cake_blueberry.html" class="btn btn-primary">Go to recipe</a>
+          </div>
+          <div class="card-footer bg-transparent" style="border: none">
+            <a style="background-color: #78a083; display: block" href="./resources/recipes/cake_blueberry.html" class="btn btn-primary">Go to recipe</a>
           </div>
         </div>
       </div>
@@ -442,18 +211,11 @@
       <div class="card-group" style="margin: 0.1% 7% 5% 7%">
         <div class="card" style="border-radius: 1rem">
           <a href="..."
-
             ><img
               class="card-img-top"
               src="./resources/IMG/sweetpotatohashwitheggs.jpeg"
               alt="sweetpotatohashwitheggs"
-              style="
-                border-radius: 1rem;
-                height: 12rem;
-                width: 100% !important;
-                object-fit: cover;
-                object-position: center;
-              "
+              style="border-radius: 1rem; height: 12rem; width: 100% !important; object-fit: cover; object-position: center"
               ;
             />
           </a>
@@ -466,28 +228,22 @@
                   <li>Prep Time: 15 min</li>
                   <li>Cook Time: 35 min</li>
                   <li>Servings: 4</li>
-                </ul></small>
+                </ul></small
+              >
             </p>
-            <a style="background-color: #78A083; display: block; " href ="#" class="btn btn-primary">Go to recipe</a>
+          </div>
+          <div class="card-footer bg-transparent" style="border: none">
+            <a style="background-color: #78a083; display: block" href="#" class="btn btn-primary">Go to recipe</a>
           </div>
         </div>
 
-        <div
-          class="card"
-          style="border-radius: 1rem; margin: 0rem 1rem 0rem 1rem"
-        >
+        <div class="card" style="border-radius: 1rem; margin: 0rem 1rem 0rem 1rem">
           <a href="..."
             ><img
               class="card-img-top"
               src="./resources/IMG/avocadotoast.jpeg"
               alt="Avocadotoast"
-              style="
-                border-radius: 1rem;
-                height: 12rem;
-                width: 100% !important;
-                object-fit: cover;
-                object-position: center;
-              "
+              style="border-radius: 1rem; height: 12rem; width: 100% !important; object-fit: cover; object-position: center"
           /></a>
 
           <div class="card-body">
@@ -502,23 +258,19 @@
                 </ul>
               </small>
             </p>
-            <a style="background-color: #78A083; display: block; " href="#" class="btn btn-primary">Go to recipe</a>
+          </div>
+          <div class="card-footer bg-transparent" style="border: none">
+            <a style="background-color: #78a083; display: block" href="#" class="btn btn-primary">Go to recipe</a>
           </div>
         </div>
-        
+
         <div class="card" style="border-radius: 1rem">
           <a href="..."
             ><img
               class="card-img-top"
               src="./resources/IMG/harcha(moroccanSemolinaBiscuits).jpeg"
               alt="Harcha"
-              style="
-                border-radius: 1rem;
-                height: 12rem;
-                width: 100% !important;
-                object-fit: cover;
-                object-position: center;
-              "
+              style="border-radius: 1rem; height: 12rem; width: 100% !important; object-fit: cover; object-position: center"
           /></a>
 
           <div class="card-body">
@@ -533,7 +285,9 @@
                 </ul>
               </small>
             </p>
-            <a style="background-color: #78A083; display: block;" href="#" class="btn btn-primary">Go to recipe</a>
+          </div>
+          <div class="card-footer bg-transparent" style="border: none">
+            <a style="background-color: #78a083; display: block" href="#" class="btn btn-primary">Go to recipe</a>
           </div>
         </div>
       </div>
@@ -541,73 +295,70 @@
 
     <!-- Footer -->
 
-      <footer>
-        <section class="footerContainer">
-          <div class="footerLeft">
-            <div class="footerHead">
-            <img class="footerLogo" src="/CooKoo/resources/IMG/Logo_transparent.png" alt=""/>
+    <footer>
+      <section class="footerContainer">
+        <div class="footerLeft">
+          <div class="footerHead">
+            <img class="footerLogo" src="/CooKoo\resources\IMG/Logo (1).png" alt="" />
             <h4><strong>COOKOO</strong></h4>
-           </div>
-            <p class="footerText">
-              Lorem ipsum dolor  consectetur <br /> adipisicing elit.
-              Ex repellat odio, <br/> obcaecati ipsa rerum dolore
-             illo  <br />dilofi solonio, voluptatem eaque<br/>halio cumque! 
+          </div>
+          <p class="footerText">
+            Lorem ipsum dolor consectetur <br />
+            adipisicing elit. Ex repellat odio, <br />
+            obcaecati ipsa rerum dolore illo <br />voluptatem eaque cumque!
+          </p>
+        </div>
+
+        <div class="footerCenter">
+          <h4 class="footerourMission"><strong>Learn Our Mission</strong></h4>
+          <div class="location">
+            <img class="footerLocationIcon" src="/CooKoo\resources\IMG/placeholder.png" alt="footerLocationIcon" />
+            <p class="footerAdresse">
+              Ruko cucruk, Radio luar dalem jos<br />
+              No.12 - 13, Kalideres - Jakarta<br />
+              11480 - Indonesia
             </p>
           </div>
-        
-          <div class="footerCenter">
-              <h4 class="footerourMission"><strong>Learn Our Mission</strong></h4>
-              <div class="location">
-                <img class="footerLocationIcon" src="/CooKoo/resources/IMG/placeholder.png" alt="footerLocationIcon">
-                <p class="footerAdresse">
-                Ruko cucruk, Radio luar dalem jos<br/>
-                No.12 - 13, Kalideres - Jakarta<br/>
-                11480 - Indonesia
-                </p>
-             </div> 
-         
-           <div class="footerphone">
-             <img class="footerPhoneIcon" src="/CooKoo/resources/IMG/call.png" alt=""/>
-             <div class=footerTelephonNummer>(+62) 21-2224 3333</div>
-            </div>
+
+          <div class="footerphone">
+            <img class="footerPhoneIcon" src="/CooKoo\resources\IMG/call.png" alt="" />
+            <div class="footerTelephonNummer">(+62) 21-2224 3333</div>
           </div>
-          <div class="footerRight">
-            <h4 class="footerHeader"><strong>Stay In Touch</strong></h4>
-            <div class="footerForm">
-              <form method="get" name="emailForm" id="emailForm">
-                
-                <input id="subscribeInput" placeholder="Subscribe our newsletter"  type="text" />
-                <img class="chef" src="/CooKoo/resources/IMG/chef.png" alt="Submit"></img>
-                <button id="button">submit</button>
-             </form>
-              </div>
-              <div >
-                <img src="/CooKoo/resources/IMG/facebookicon.png" alt="facebook-icon" class="socialIcons"/>
-                <img src="/CooKoo/resources/IMG/instagram.png" alt="instagram" class="socialIcons"/>
-                <img src="/CooKoo/resources/IMG/starbucks.png" alt="starbucks" class="socialIcons"/>
-                <img src="/CooKoo/resources/IMG/mcdonalds.png" alt="madonalds" class="socialIcons"/>
-                <img src="/CooKoo/resources/IMG/apple.png" alt="facebook-icon" class="socialIcons"/>
-                <img src="/CooKoo/resources/IMG/youtube.png" alt="youtube" class="socialIcons"/>
-                <img src="/CooKoo\resources\IMG/Big Header (1).png" alt="facebook-icon" class="socialIcons"/>
-              </div>
-            </div>   
-        </section >
-        <section>
+        </div>
+        <div class="footerRight">
+          <h4 class="footerHeader"><strong>STAY IN TOUCH</strong></h4>
+          <div class="footerForm">
+            <form method="get" name="emailForm" id="emailForm">
+              <input id="subscribeInput" placeholder="Subscribe our newsletter" type="text" />
+              <img class="chef" src="/CooKoo\resources\IMG/chef.png" alt="Submit" />
+              <button id="button">submit</button>
+            </form>
+          </div>
+          <div>
+            <img src="/CooKoo\resources\IMG/facebookicon.png" alt="facebook-icon" class="socialIcons" />
+            <img src="/CooKoo\resources\IMG/instagram.png" alt="instagram" class="socialIcons" />
+            <img src="/CooKoo\resources\IMG/starbucks.png" alt="starbucks" class="socialIcons" />
+            <img src="/CooKoo\resources\IMG/mcdonalds.png" alt="madonalds" class="socialIcons" />
+            <img src="/CooKoo\resources\IMG/youtube.png" alt="youtube" class="socialIcons" />
+            <img src="/CooKoo\resources\IMG/Big Header (1).png" alt="facebook-icon" class="socialIcons" />
+          </div>
+        </div>
+      </section>
+      <section>
         <div class="footerHelp">
-          <div class="helpText"> <strong>HELP TERMS & CONDITION PRIVACY </strong></div>
+          <div class="helpText"><strong>HELP TERMS & CONDITION PRIVACY </strong></div>
           <div class="copyRight">
             <div class="copyRight1"><strong>Copyright © 2021 - </strong></div>
-            <img class="footerLogo" src="/CooKoo\resources\IMG/Logo_transparent.png" alt=""/>
+            <img class="footerLogo" src="/CooKoo\resources\IMG/Logo_transparent.png" alt="" />
             <div class="copyRight2"><strong>COOKOO Creative.</strong></div>
           </div>
         </div>
       </section>
     </footer>
-    
 
     <script>
-      document.getElementById("button").addEventListener('click', function() {
-          alert("Thank you for subscribing!");
+      document.getElementById("button").addEventListener("click", function () {
+        alert("Thank you for subscribing!");
       });
     </script>
 
@@ -615,8 +366,7 @@
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous">
-    </script>
-
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
