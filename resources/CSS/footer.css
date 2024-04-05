@@ -4,17 +4,22 @@
   justify-content: center;
  
   width: 100vw;
+  height:100vh;
   margin: auto;
   column-gap: 10px;
   
 }
 .footerContainer {
-  
+ 
   display: flex;
+  justify-content: start;
+  flex-wrap: nowrap;
   align-items: center;
   border: 1px solid black;
-  padding: 50px;
+  padding:50px;
+  padding-left: 130px;
   box-sizing: border-box;
+  
  
  
 }
@@ -24,7 +29,8 @@
   justify-content: center;
   width: 100vh;
   height:auto;
-  margin-left: 120px;
+  margin-left: 70px;
+  
   
 }
 
@@ -41,7 +47,7 @@
 .footerLeft {
   display: flex;
   flex-direction: column;
-
+  
 }
 
 .footerHead {
@@ -55,7 +61,12 @@
   
   display: flex;
   flex-direction: column;
+  margin-left: 0px;
+  margin-right: 0px;
   
+}
+.footerRight {
+  margin-left: 0px;
 }
 
 .location {
