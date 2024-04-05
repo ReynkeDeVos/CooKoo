@@ -4,19 +4,18 @@
   justify-content: center;
  
   width: 100vw;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   column-gap: 10px;
   
 }
 .footerContainer {
   
   display: flex;
+  align-items: center;
   border: 1px solid black;
   padding: 50px;
-  align-items: center;
+  box-sizing: border-box;
+ 
  
 }
 .footerLeft,
@@ -31,6 +30,7 @@
 
 @media (max-width: 768px) {
   footer .footerContainer {
+    white-space: nowrap;
     flex-direction: column;
     align-items: stretch; 
   }
@@ -84,6 +84,7 @@
 .footerLeft:hover,
 .footerCenter:hover,
 .footerRight:hover {
+  white-space: nowrap;
   font-size: 1.3em; 
   color: rgb(38, 38, 117);
 }
