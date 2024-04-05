@@ -19,7 +19,8 @@
 .footerCenter,
 .footerRight {
   justify-content: end;
-  width: 100vh;
+  /* This setting destroys the mobile view */
+  /* width: 100vh; */
   height: auto;
   margin-left: 70px;
   margin-right: auto;
@@ -43,7 +44,6 @@
   flex-direction: row;
   margin-left: 20px;
   margin-right: 20px;
-  
 }
 
 .footerCenter {
@@ -121,7 +121,7 @@
   display: flex;
   flex-direction: row;
 }
-.footerHeader{
+.footerHeader {
   margin-bottom: 25px;
 }
 .footerIcons {
