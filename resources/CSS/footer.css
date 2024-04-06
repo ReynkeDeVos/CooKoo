@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
 
-  width: 100vw;
+  width: 100svw;
   margin: auto;
   column-gap: 10px;
 }
@@ -19,7 +19,7 @@
 .footerCenter,
 .footerRight {
   justify-content: end;
-  width: 100vh;
+  width: 100svw;
   height: auto;
   margin-left: 70px;
   margin-right: auto;
@@ -30,6 +30,19 @@
     white-space: nowrap;
     flex-direction: column;
     align-items: stretch;
+  }
+  footer .footerLeft,
+  .footerCenter,
+  .footerRight {
+    width: 0svw;
+    margin-inline: 0px;
+  }
+  footer .copyRight {
+    padding-right: 0px;
+    display: none;
+  }
+  footer .helpText {
+    padding-left: 0px;
   }
 }
 
@@ -43,7 +56,6 @@
   flex-direction: row;
   margin-left: 20px;
   margin-right: 20px;
-  
 }
 
 .footerCenter {
@@ -81,7 +93,7 @@
 .footerCenter:hover,
 .footerRight:hover {
   white-space: nowrap;
-  font-size: 1.3em;
+  /* font-size: 1.3em; */
   color: rgb(38, 38, 117);
 }
 
@@ -121,10 +133,13 @@
   display: flex;
   flex-direction: row;
 }
-.footerHeader{
+.footerHeader {
   margin-bottom: 25px;
 }
 .footerIcons {
   margin-left: 10px;
- 
+
 }
+  gap-row: 50px;
+}
+
